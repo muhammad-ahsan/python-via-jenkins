@@ -1,2 +1,2 @@
-# Python via Jenkins
-A sample python script which are intended to be executed directly on Jenkins server
+# Sample Python Project
+A sample python project is intended to be executed via Jenkins server for testing purposes.
