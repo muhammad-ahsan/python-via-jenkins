@@ -1,2 +1,2 @@
 # Sample Python Project
-A sample python project is intended to be executed via Jenkins server for testing purposes.
+A sample python project is intended to be used to develop CI/CD pipelines using Jenkins server.
