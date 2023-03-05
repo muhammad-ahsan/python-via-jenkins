@@ -1,2 +1,2 @@
 def test_always_passes() -> None:
-    assert True
+    assert True is False
