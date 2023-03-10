@@ -1,5 +1,14 @@
 steps:
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/repository/sample-pyproject', '.']
+  
+  # Docker Build
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'us-central1-docker.pkg.dev/${PROJECT_ID}/repository/sample-pyproject', '.']
+  
+  
+  # Docker Push
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 
+           'us-central1-docker.pkg.dev/${PROJECT_ID}/repository/sample-pyproject']
+
 options:
   logging: CLOUD_LOGGING_ONLY
